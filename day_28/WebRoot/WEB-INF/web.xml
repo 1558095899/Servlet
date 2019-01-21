@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1"
+  metadata-complete="true">
+	<servlet>
+		<servlet-name>first</servlet-name>
+		<!-- 按下ctrl+r 点day.First进入源码 -->
+		<servlet-class>day.First</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>Sevlet1</servlet-name>
+    <servlet-class>day.Sevlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Servlet2</servlet-name>
+    <servlet-class>day.Servlet2</servlet-class>
+  </servlet>
+  <servlet>
+ 
+    <servlet-name>ServletResource</servlet-name>
+    <servlet-class>day.ServletResource</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RequestForm</servlet-name>
+    <servlet-class>Request.RequestForm</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RequestForm1</servlet-name>
+    <servlet-class>Request.RequestForm1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RequestForward</servlet-name>
+    <servlet-class>Request.RequestForward</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RequestForward2</servlet-name>
+    <servlet-class>Request.RequestForward2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CookieAccessTime</servlet-name>
+    <servlet-class>CookieDemo.CookieAccessTime</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CookieAccessTime2</servlet-name>
+    <servlet-class>CookieDemo.CookieAccessTime2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CookieClear</servlet-name>
+    <servlet-class>CookieDemo.CookieClear</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CookieUesrName</servlet-name>
+    <servlet-class>CookieDemo.CookieUesrName</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CookieUserName2</servlet-name>
+    <servlet-class>CookieDemo.CookieUserName2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HttpsessionNameDemo</servlet-name>
+    <servlet-class>HttpSessionDemo.HttpsessionNameDemo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HttpSessionNameDemo2</servlet-name>
+    <servlet-class>HttpSessionDemo.HttpSessionNameDemo2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Enter</servlet-name>
+    <servlet-class>WorkDemo.Enter</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Show</servlet-name>
+    <servlet-class>WorkDemo.EnterService</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Show2</servlet-name>
+    <servlet-class>WorkDemo.Show2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddBook</servlet-name>
+    <servlet-class>WorkDemo.AddBook</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowBook</servlet-name>
+    <servlet-class>WorkDemo.ShowBook</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PhotoResource</servlet-name>
+    <servlet-class>WorkDemo.PhotoResource</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>request1</servlet-name>
+    <servlet-class>Request.request1</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>Sevlet1</servlet-name>
+    <url-pattern>/servlet/Sevlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet2</servlet-name>
+    <url-pattern>/servlet/Servlet2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletResource</servlet-name>
+    <url-pattern>/servlet/ServletResource</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestForm</servlet-name>
+    <url-pattern>/form</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestForm1</servlet-name>
+    <url-pattern>/form1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestForward</servlet-name>
+    <url-pattern>/forward</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestForward2</servlet-name>
+    <url-pattern>/forward2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieAccessTime</servlet-name>
+    <url-pattern>/time</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieAccessTime2</servlet-name>
+    <url-pattern>/time2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieClear</servlet-name>
+    <url-pattern>/clear</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieUesrName</servlet-name>
+    <url-pattern>/name</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieUserName2</servlet-name>
+    <url-pattern>/name2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HttpsessionNameDemo</servlet-name>
+    <url-pattern>/nameDemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HttpSessionNameDemo2</servlet-name>
+    <url-pattern>/nameDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Enter</servlet-name>
+    <url-pattern>/enter</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Show</servlet-name>
+    <url-pattern>/show</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Show2</servlet-name>
+    <url-pattern>/show2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddBook</servlet-name>
+    <url-pattern>/addbook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowBook</servlet-name>
+    <url-pattern>/showbook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PhotoResource</servlet-name>
+    <url-pattern>/resource</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>request1</servlet-name>
+    <url-pattern>/request</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

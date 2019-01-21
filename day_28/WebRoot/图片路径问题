@@ -1,0 +1,2 @@
+在WebRoot目录下 存放图片的情况下 ，html里编写的路径用相对路径  即：<img src="1.jpg"><br/>即可
+图片可以存放在其WebRoot目录下或其子目录下都可以用tomcat加载出来    
