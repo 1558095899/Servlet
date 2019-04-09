@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ListenerAndFilter</display-name>
+  <!-- 页面出现异常后 跳转配置 -->
+  <error-page>
+  	<exception-type>java.lang.Exception</exception-type>
+  <!-- 	<error-code>404</error-code> -->
+  	<location>/error.jsp</location>
+  </error-page>
+  
+  <filter>
+  	<filter-name>FilterDemo1</filter-name>
+  	<filter-class>MyFilter.FilterDemo1</filter-class>
+  	<init-param>
+  		<param-name>encoding</param-name>
+  		<param-value>utf-8</param-value>
+  	</init-param>
+  </filter>
+  <filter-mapping>
+  	<filter-name>FilterDemo1</filter-name>
+  	<url-pattern>/*</url-pattern>
+  	<!-- /*表示所有格式都拦截    如果是/servlet/demo1    fiter只拦截这个的文件，会先通过FilterDemo1.java 输出这里面的内容 之后输出ServletDemo1里-->
+  	<!-- 如果此时访问index.jsp  会直接显示.jsp里的内容  不会打印FilterDemo1里的内容       并不会限制index.jsp的访问 -->
+  	
+  	<dispatcher>FORWARD</dispatcher><!-- 只拦截forward后的页面 -->
+  	<dispatcher>REQUEST</dispatcher><!-- 都拦截 -->
+  </filter-mapping>
+
+  <!-- <listener>
+  	<listener-class>MyListener.MyHttpSessionListenner</listener-class>
+  </listener>
+   -->
+   <!-- <listener>
+   	<listener-class>MyListener.MyServletContextListener</listener-class>
+   </listener> -->
+   <!-- <listener>
+   	<listener-class>MyListener.MyHttpSessionAttributeListener</listener-class>
+   </listener>-->
+   <listener>
+   		<listener-class>MyListener.OnlineCounterShow</listener-class>
+   </listener>
+  <servlet>
+    <servlet-name>ServlerDemo1</servlet-name>
+    <servlet-class>MyFilter.ServlerDemo1</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ServlerDemo1</servlet-name>
+    <url-pattern>/servlet/demo1</url-pattern>
+  </servlet-mapping> 
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

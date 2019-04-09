@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>LoadClass</servlet-name>
+    <servlet-class>LoadDemo.LoadClass</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletFileUpLoadDemo</servlet-name>
+    <servlet-class>LoadDemo.ServletFileUpLoadDemo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FileUpLoadDemo</servlet-name>
+    <servlet-class>LoadDemo.FileUpLoadDemo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DownLoadClass</servlet-name>
+    <servlet-class>LoadDemo.DownLoadClass</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>LoadDemo.TestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>LoadDemo.test</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoadClass</servlet-name>
+    <url-pattern>/loadClass</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletFileUpLoadDemo</servlet-name>
+    <url-pattern>/servletFileUpLoadDemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileUpLoadDemo</servlet-name>
+    <url-pattern>/fileUpLoadDemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownLoadClass</servlet-name>
+    <url-pattern>/downLoadClass</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/testServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+
+</web-app>

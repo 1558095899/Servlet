@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>ServletDemo1</servlet-name>
+    <servlet-class>AJAXDemo1.ServletDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserNameTestServlet</servlet-name>
+    <servlet-class>AJAXDemo1.UserNameTestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserEmailTestServlet</servlet-name>
+    <servlet-class>AJAXDemo1.UserEmailTestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchInfoServlet</servlet-name>
+    <servlet-class>AJAXDemo1.SearchInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>JqueryAjax</servlet-name>
+    <servlet-class>AJAXDemo1.JqueryAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>JqueryAjaxRename</servlet-name>
+    <servlet-class>JsonDemo.JqueryAjaxRename</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ServletDemo1</servlet-name>
+    <url-pattern>/servletDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserNameTestServlet</servlet-name>
+    <url-pattern>/userNameTestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserEmailTestServlet</servlet-name>
+    <url-pattern>/userEmailTestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchInfoServlet</servlet-name>
+    <url-pattern>/searchInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JqueryAjax</servlet-name>
+    <url-pattern>/jqueryAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JqueryAjaxRename</servlet-name>
+    <url-pattern>/jqueryAjaxRename</url-pattern>
+  </servlet-mapping>
+
+</web-app>
